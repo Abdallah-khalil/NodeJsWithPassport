@@ -1,0 +1,14 @@
+{
+    "name": "bower-packages",
+    "description": "description",
+    "authors": [
+        "Abdallah khalil"
+    ],
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {
+        "jquery": "latest",
+        "bootstrap": "latest",
+        "fontawesome": "latest"
+    }
+}
