@@ -7,17 +7,12 @@ export class AuthController {
 
     @Get("google/callback")
     public async googleCallback() {
-        await passport.authenticate('google', {
-            successRedirect: '/user',
-            failureRedirect: "/error"
-        });
+      
     }
 
     @Get("google")
-    public async googleSignIn( @Req() req, @Res() res, @Next() next) {
-        await passport.authenticate('google', {
-            scope: ['profile', 'email']
-        });
+    public async googleSignIn() {
+        
     }
 
 

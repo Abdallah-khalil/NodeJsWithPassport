@@ -20,3 +20,4 @@ npm-debug.log
 # dist
 /dist
 /public/lib
+/src/secretKeys.ts
