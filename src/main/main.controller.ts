@@ -13,7 +13,6 @@ export class HomeController {
 
 }
 
-
 @Controller('user')
 export class UserController {
     constructor() { }
@@ -22,7 +21,7 @@ export class UserController {
     public getUsers( @Res() res, @Req() req) {
         res.render('user', {
             title: "Users Page",
-            user: { name: req.user.displayName, image: req.user._json.image.url }
+            user: { name: req.user.displayName, image: req.user.image }
         });
     }
 }
