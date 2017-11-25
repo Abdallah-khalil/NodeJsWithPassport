@@ -7,8 +7,8 @@ import { IUserModel } from '../../auth/user.model';
 export class PassportGoogleService extends OAuth2Strategy {
     constructor(private secretKey: SecretKey) {
         super({
-            clientID: "749598100296-43vrlaeuikdbgo43r4piadf6cujfso5v.apps.googleusercontent.com",
-            clientSecret: "NyrfQE8zpd8P6FEkNVL4pozQ",
+            clientID: secretKey.getGoogleKeys().clientID,
+            clientSecret: secretKey.getGoogleKeys().clientSecret,
             callbackURL: 'http://localhost:6600/auth/google/callback',
             passReqToCallback: true
         }, (req, accessToken, refreshToken, profile, done) => {

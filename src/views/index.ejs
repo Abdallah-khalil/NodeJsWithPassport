@@ -15,14 +15,26 @@
 
 <body>
     <div class="container">
+        <div class="jumbotron">
+            <div class="h1">
+                <h1>WELCOME TO Passport Social Accounts Strategy With Nestjs</h1>
+                <p>you can try to login with the next social media profiles </p>
+            </div>
+        </div>
         <div class="row">
-            <ul class="nav nav-justified">
-                <li>
-                    <a href="/auth/google" class="googleplus btn btn-md btn-link">
-                        <i class="fa fa-google-plus"></i>
+            <div class="col-sm-6">
+                <div class="btn-group">
+                    <a href="/auth/google" class="googleplus btn btn-md btn-danger">
+                        <i class="fa fa-google-plus fa-2x"></i>
                     </a>
-                </li>
-            </ul>
+                    <a href="/auth/facebook" class="facebook btn btn-md btn-info">
+                        <i class="fa fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="/auth/github" class="github btn btn-md btn-default">
+                        <i class="fa fa-github fa-2x"></i>
+                    </a>
+                </div>
+            </div>
         </div>
 
     </div>

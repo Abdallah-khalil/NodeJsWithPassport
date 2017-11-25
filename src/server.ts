@@ -6,7 +6,6 @@ import * as bodyParser from 'body-parser';
 import * as passport from 'passport';
 
 import { ApplicationModule } from './app.module';
-import { PassportService } from './common/services/passport.service';
 
 
 const expressApp: express.Application = express();

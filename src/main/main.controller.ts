@@ -13,18 +13,6 @@ export class HomeController {
 
 }
 
-@Controller('user')
-export class UserController {
-    constructor() { }
-
-    @Get()
-    public getUsers( @Res() res, @Req() req) {
-        res.render('user', {
-            title: "Users Page",
-            user: { name: req.user.displayName, image: req.user.image }
-        });
-    }
-}
 
 @Controller('error')
 export class ErrorController {
